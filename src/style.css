@@ -441,7 +441,7 @@ nav#nav {
   gap: 20px;
 }
 
-.testimonial-item:nth-last-child(2) .content {
+.testimonial-item:nth-last-child(2) .client-content {
   text-align: right;
 }
 
@@ -464,7 +464,7 @@ nav#nav {
   transform: scaleX(-1);
 }
 
-.content {
+.client-content {
   flex-grow: 1;
   width: 600px;
 }
@@ -573,7 +573,7 @@ h2 {
 .underline {
   width: 48px;
   height: 4px;
-  background-color: #5a67d8; /* Indigo-500 */
+  background-color: var(--yellow); /* Indigo-500 */
   margin: 8px auto;
 }
 
@@ -581,7 +581,7 @@ h2 {
   flex: 2;
   padding: 16px;
   text-align: left;
-  border-left: 1px solid #e2e8f0; /* Gray-200 */
+  border-left: 1px solid var(--yellow-lite); /* Gray-200 */
 }
 
 .description p {
@@ -590,7 +590,7 @@ h2 {
 }
 
 .learn-more {
-  color: #5a67d8; /* Indigo-500 */
+  color: var(--yellow); /* Indigo-500 */
   display: inline-flex;
   align-items: center;
   text-decoration: none;

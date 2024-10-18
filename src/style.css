@@ -220,6 +220,20 @@ nav#nav {
   padding: 16px;
 }
 
+.col .title {
+  font-size: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.heighlights::after {
+  content: 'Real Estate Agent';
+}
+
+.heighlights {
+  color: var(--yellow);
+}
+
 .dot2 {
   position: absolute;
   top: 0;

@@ -32,7 +32,7 @@ html {
   --purple: #b907ff;
   --purple-lite: #f5dbff;*/
   --yellow: #ffc107;
-  --yellowDark: #d8a407;
+  --yellowDark: #dca705;
   --yellow-lite: #fff9e7;
   /* --yellow-sec: #ffecc8;
   --yellow-box: #ffd09b;
@@ -279,6 +279,8 @@ nav#nav {
 .button-group {
   display: flex;
   justify-content: center;
+  float: left;
+  margin-left: 15px;
 }
 
 .btn {
@@ -287,6 +289,8 @@ nav#nav {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
 .primary {
@@ -298,10 +302,21 @@ nav#nav {
   background-color: var(--yellowDark);
 }
 
+.primary:active {
+  background-color: var(--yellow);
+}
+
 .secondary {
   background-color: #e2e8f0;
   color: #4a5568;
   margin-left: 16px;
+  transform: 1.3s;
+}
+.secondary:hover {
+  background-color: #c2c8d1;
+}
+.secondary:active {
+  background-color: #e2e8f0;
 }
 
 .hero-image {
@@ -532,7 +547,6 @@ nav#nav {
   overflow: hidden;
   height: 350px; /* Adjust height as needed */
   width: 100%;
-  display: fel;
   display: flex;
   justify-content: center;
 }
@@ -550,8 +564,12 @@ nav#nav {
 .info-container {
   display: flex;
   flex-direction: row;
+  margin: auto;
   margin-top: 20px;
-  width: 100%;
+  width: 83%;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
 }
 
 .profile {
@@ -595,7 +613,9 @@ h2 {
   flex: 2;
   padding: 16px;
   text-align: left;
-  border-left: 1px solid var(--yellow-lite); /* Gray-200 */
+  border-left: 1px solid var(--yellow-lite);
+  padding-top: 0;
+  margin-top: 10px;
 }
 
 .description p {

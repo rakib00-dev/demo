@@ -159,7 +159,7 @@ nav#nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 29px;
+  gap: 7px;
 }
 
 #menuUl .menuLi {
@@ -841,6 +841,14 @@ textarea {
   .info-container {
     display: grid;
   }
+
+  .btn:first-child {
+    margin-left: 40px;
+  }
+  .btn {
+    transform: scale(1.5);
+    margin-right: 60px;
+  }
 }
 
 /* md */
@@ -883,11 +891,12 @@ textarea {
 .navToggle {
   display: grid;
   right: 0;
+  top: 100px;
   gap: 0;
-  transform: scale(0.8);
   position: absolute;
   z-index: 12;
   line-height: 0px;
-  background: white;
+  background: rgb(255 255 255);
+  border-radius: 13px;
   width: 100%;
 }

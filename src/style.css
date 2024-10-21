@@ -793,7 +793,7 @@ textarea {
 /* lg */
 @media (max-width: 1024px) {
   .wrapper {
-    width: 870px;
+    width: 915px;
   }
   .hidden-lg {
     display: none;

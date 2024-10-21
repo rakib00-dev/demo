@@ -159,7 +159,7 @@ nav#nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
+  gap: 29px;
 }
 
 #menuUl .menuLi {
@@ -288,13 +288,6 @@ nav#nav {
   text-align: center;
 }
 
-.title {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  font-weight: 500;
-  color: #1f2937;
-}
-
 .header-description {
   margin-bottom: 32px;
   line-height: 1.6;
@@ -386,16 +379,6 @@ nav#nav {
 /* experience section ⬆️ */
 
 /* services section ⬇️*/
-
-.text-center {
-  text-align: center;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #1f1f1f;
-}
 
 .description {
   margin: 10px 0;
@@ -534,9 +517,10 @@ nav#nav {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #1a202c; /* Darker gray */
+  margin-bottom: 16px;
 }
 
 .description {
@@ -816,6 +800,7 @@ textarea {
   }
   #menuUl {
     display: none;
+    gap: 7px;
   }
 
   #navBar {

@@ -813,11 +813,14 @@ textarea {
   #navBar {
     display: inline;
   }
+  .row {
+    display: grid;
+  }
   .row1 {
     flex-direction: column-reverse;
   }
   .hero-image {
-    max-width: 352px;
+    max-width: 450px;
   }
 
   #logo {

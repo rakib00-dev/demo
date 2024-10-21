@@ -3,6 +3,11 @@ const bar = document.getElementById('bar');
 const cross = document.getElementById('cross');
 const menuUl = document.getElementById('menuUl');
 
+setInterval(() => {
+  const width = window.innerWidth;
+  fixedNav.style.width = `${width}px`;
+}, 1000);
+
 window.onload = () => {
   const width = window.innerWidth;
   fixedNav.style.width = `${width}px`;

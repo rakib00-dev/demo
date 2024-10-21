@@ -142,6 +142,7 @@ li {
   font-size: 28px;
   font-weight: 500;
   padding: 29px 0;
+  z-index: 1;
 }
 
 #logo a span.dot {
@@ -771,14 +772,22 @@ textarea {
 }
 
 .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12px;
+  background: #dcdcdcab;
+  padding: 20px 10px;
+  border-radius: 43px;
+  width: 60%;
 }
 
 .social-icons .icon {
+  font-size: 30px;
   margin: 0 8px;
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
   color: #4a5568; /* Text Gray 600 */
 }
 

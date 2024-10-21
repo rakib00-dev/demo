@@ -116,18 +116,19 @@ nav#nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #logo {
   position: relative;
   font-size: 28px;
   font-weight: 500;
+  padding: 29px 0;
 }
 
 #logo a span.dot {
   position: absolute;
-  bottom: 0;
+  bottom: 29px;
   right: -20px;
   height: 10px;
   width: 10px;
@@ -149,15 +150,19 @@ nav#nav {
     right: -5px;
   }
 }
+/* 
+#menu {
+  position: relative; */
+/* } */
 
-#menu #menuUl {
+#menuUl {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 29px;
 }
 
-#menu #menuUl .menuLi {
+#menuUl .menuLi {
   position: relative;
   padding: 29px 0;
   cursor: pointer;
@@ -166,15 +171,15 @@ nav#nav {
   transition: 0.3s;
 }
 
-#menu #menuUl .menuLi:hover {
+#menuUl .menuLi:hover {
   font-weight: 600;
 }
 
-#menu #menuUl .menuLi a {
+#menuUl .menuLi a {
   transition: 0.3s;
 }
 
-#menu #menuUl .menuLi:hover a::after {
+#menuUl .menuLi:hover a::after {
   content: '';
   position: absolute;
   display: flex;
@@ -187,8 +192,26 @@ nav#nav {
   background: var(--yellow);
 }
 
-#menu #menuUl .menuLi:hover a:active {
+#menuUl .menuLi:hover a:active {
   font-weight: 500;
+}
+
+#navBar {
+  display: none;
+  position: relative;
+  margin: -5px 13px 0 0;
+}
+
+#navBar i {
+  position: absolute;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#navBar #cross {
+  transition: 0.3s;
+  display: none;
 }
 
 #contact a {
@@ -212,6 +235,7 @@ nav#nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .col {
@@ -328,6 +352,9 @@ nav#nav {
 /* header section ⬆️ */
 
 /* experience section ⬇️ */
+.ex-row {
+  display: flex;
+}
 
 .ex-col {
   flex: 1;
@@ -784,6 +811,13 @@ textarea {
   .hidden-lg {
     display: none;
   }
+  #menuUl {
+    display: none;
+  }
+
+  #navBar {
+    display: inline;
+  }
 }
 
 /* md */
@@ -810,6 +844,17 @@ textarea {
   .stat-title {
     font-size: 2.5rem; /* Larger title for small devices */
   }
+
+  #logo {
+    font-size: 25px;
+  }
+
+  .ex-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    transform: scale(1);
+  }
 }
 
 /* xs */
@@ -821,4 +866,15 @@ textarea {
     display: grid;
     column-count: 1;
   }
+}
+
+.navToggle {
+  right: 0;
+  gap: 0;
+  transform: scale(0.8);
+  position: absolute;
+  z-index: 12;
+  line-height: 0px;
+  background: white;
+  width: 100%;
 }

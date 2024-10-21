@@ -835,7 +835,7 @@ textarea {
     display: grid;
     grid-template-columns: 50% 50%;
     place-items: center;
-    transform: scale(1);
+    transform: scale(1.1);
   }
 
   .info-container {
@@ -848,6 +848,12 @@ textarea {
   .btn {
     transform: scale(1.5);
     margin-right: 60px;
+  }
+  .learn-more {
+    font-size: 26px;
+  }
+  .card-description {
+    padding: 0 84px;
   }
 }
 

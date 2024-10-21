@@ -762,8 +762,10 @@ textarea {
 }
 
 .contact-info {
+  display: grid;
   margin-top: 24px;
   text-align: center;
+  place-items: center;
 }
 
 .contact-info a {

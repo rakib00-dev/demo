@@ -88,6 +88,14 @@ li {
   padding-right: 0.5rem;
 }
 
+#wrapper {
+  width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* ratting */
 .rate {
   position: absolute;
@@ -110,13 +118,23 @@ li {
 /* ratting */
 
 /* navBar */
-nav#nav {
+#nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+  transition: 1s;
   /* overflow: hidden; */
+}
+
+#fixedNav {
+  position: relative;
+  top: 0;
+  background: var(--mainBgColor);
+  width: 100%;
+  z-index: 50;
+  transition: 1s;
 }
 
 #logo {
@@ -662,12 +680,6 @@ h2 {
   padding: 24px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .header {
   margin-bottom: 24px;
 }
@@ -781,11 +793,18 @@ textarea {
   .wrapper {
     width: 1280px;
   }
+
+  #wrapper {
+    width: 1280px;
+  }
 }
 
 /* xl */
 @media (max-width: 1280px) {
   .wrapper {
+    width: 1024px;
+  }
+  #wrapper {
     width: 1024px;
   }
 }
@@ -795,6 +814,10 @@ textarea {
   .wrapper {
     width: 915px;
   }
+  #wrapper {
+    width: 768px;
+  }
+
   .hidden-lg {
     display: none;
   }
@@ -804,7 +827,7 @@ textarea {
   }
 
   #navBar {
-    display: inline;
+    display: block;
   }
   .row {
     display: grid;
@@ -818,6 +841,7 @@ textarea {
 
   #logo {
     font-size: 50px;
+    margin-top: 23px;
   }
 
   #navBar i {
@@ -864,11 +888,17 @@ textarea {
   .testimonial-section {
     transform: scale(1.1);
   }
+  .contact-section {
+    transform: scale(1.2);
+  }
 }
 
 /* md */
 @media (max-width: 768px) {
   .wrapper {
+    width: 640px;
+  }
+  #wrapper {
     width: 640px;
   }
   .stat-title {
@@ -887,6 +917,9 @@ textarea {
   .wrapper {
     width: 475px;
   }
+  #wrapper {
+    width: 475px;
+  }
   .stat-title {
     font-size: 2.5rem; /* Larger title for small devices */
   }
@@ -897,6 +930,9 @@ textarea {
   .wrapper {
     width: 100%;
   }
+  #wrapper {
+    width: 100%;
+  }
   .row {
     display: grid;
     column-count: 1;
@@ -905,13 +941,13 @@ textarea {
 
 .navToggle {
   display: grid;
-  right: 0;
-  top: 170px;
+  left: 0;
+  top: 205px;
   gap: 0;
   position: absolute;
   z-index: 12;
   line-height: 0px;
-  background: rgb(255 255 255);
+  background: rgb(255 250 254 / 20%);
   border-radius: 13px;
   width: 100%;
   transform: scale(1.3);

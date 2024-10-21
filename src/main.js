@@ -22,9 +22,11 @@ bar.addEventListener('click', () => {
   cross.style.display = 'block';
   bar.style.display = 'none';
   menuUl.style.display = 'grid';
+  menuUl.classList.add('navToggle');
   cross.addEventListener('click', () => {
     cross.style.display = 'none';
     bar.style.display = 'block';
     menuUl.style.display = 'none';
+    menuUl.classList.remove('navToggle');
   });
 });

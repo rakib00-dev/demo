@@ -818,6 +818,12 @@ textarea {
   #navBar {
     display: inline;
   }
+  .row1 {
+    flex-direction: column-reverse;
+  }
+  .hero-image {
+    max-width: 271px;
+  }
 }
 
 /* md */

@@ -817,7 +817,7 @@ textarea {
   }
 
   #logo {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #navBar i {
@@ -847,6 +847,16 @@ textarea {
   }
   .card-description {
     padding: 0 84px;
+  }
+
+  .image-container img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 596px;
+    width: 88%;
+  }
+  .info-container {
+    width: 100%;
   }
 }
 

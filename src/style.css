@@ -900,7 +900,7 @@ textarea {
 .navToggle {
   display: grid;
   right: 0;
-  top: 100px;
+  top: 170px;
   gap: 0;
   position: absolute;
   z-index: 12;
@@ -908,4 +908,5 @@ textarea {
   background: rgb(255 255 255);
   border-radius: 13px;
   width: 100%;
+  transform: scale(1.3);
 }

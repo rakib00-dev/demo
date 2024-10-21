@@ -834,6 +834,10 @@ textarea {
     place-items: center;
     transform: scale(1);
   }
+
+  .info-container {
+    display: grid;
+  }
 }
 
 /* md */

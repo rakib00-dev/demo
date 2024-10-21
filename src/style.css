@@ -664,11 +664,6 @@ h2 {
 /* about me section ⬆️ */
 
 /* about me section ⬇️ */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 .contact-section {
   color: #4a5568; /* Text Gray 600 */
@@ -826,7 +821,11 @@ textarea {
   }
 
   #logo {
-    font-size: 35px;
+    font-size: 40px;
+  }
+
+  #navBar i {
+    font-size: 40px;
   }
 
   .ex-row {

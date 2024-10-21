@@ -858,6 +858,9 @@ textarea {
   .info-container {
     width: 100%;
   }
+  #menuUl .menuLi:hover a::after {
+    bottom: 9px;
+  }
 }
 
 /* md */

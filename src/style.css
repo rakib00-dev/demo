@@ -295,9 +295,17 @@ nav#nav {
   color: #1f2937;
 }
 
-.description {
+.header-description {
   margin-bottom: 32px;
   line-height: 1.6;
+  margin: 10px 0;
+  color: #7d7d7d;
+  flex: 2;
+  padding: 16px;
+  text-align: left;
+  border-left: 1px solid var(--yellow-lite);
+  padding-top: 0;
+  margin-top: 10px;
 }
 
 .button-group {

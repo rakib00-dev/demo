@@ -861,6 +861,9 @@ textarea {
   #menuUl .menuLi:hover a::after {
     bottom: 9px;
   }
+  .testimonial-section {
+    transform: scale(1.1);
+  }
 }
 
 /* md */

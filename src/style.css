@@ -840,16 +840,6 @@ textarea {
   .hero-image {
     max-width: 271px;
   }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  .wrapper {
-    width: 475px;
-  }
-  .stat-title {
-    font-size: 2.5rem; /* Larger title for small devices */
-  }
 
   #logo {
     font-size: 25px;
@@ -860,6 +850,16 @@ textarea {
     grid-template-columns: 50% 50%;
     place-items: center;
     transform: scale(1);
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .wrapper {
+    width: 475px;
+  }
+  .stat-title {
+    font-size: 2.5rem; /* Larger title for small devices */
   }
 }
 

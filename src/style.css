@@ -444,7 +444,7 @@ li {
   border-radius: 50%;
 }
 
-.icon i {
+.card .icon i {
   font-size: 31px;
   stroke: var(--yellow);
 }
@@ -703,6 +703,7 @@ h2 {
 .form-container {
   max-width: 600px;
   margin: 0 auto;
+  display: grid;
 }
 
 .form-row {
@@ -825,6 +826,12 @@ textarea {
 
 /* lg */
 @media (max-width: 1024px) {
+  section {
+    width: 112%;
+  }
+  body {
+    width: 118%;
+  }
   .wrapper {
     width: 915px;
   }
@@ -916,9 +923,18 @@ textarea {
   }
   .testimonial-section {
     transform: scale(1.1);
+    width: 108%;
   }
   .contact-section {
     transform: scale(1.2);
+  }
+  .icon {
+    width: 145px;
+    height: 145px;
+  }
+
+  .card .icon i {
+    font-size: 81px;
   }
 }
 

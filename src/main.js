@@ -2,7 +2,10 @@ const fixedNav = document.getElementById('fixedNav');
 const bar = document.getElementById('bar');
 const cross = document.getElementById('cross');
 const menuUl = document.getElementById('menuUl');
+const body = document.getElementById('body');
 
+let bodyWidth = body.clientWidth;
+// let bodyWidthAdd = window.innerWidth - bodyWidth;
 setInterval(() => {
   const width = window.innerWidth;
   fixedNav.style.width = `${width}px`;
@@ -10,6 +13,8 @@ setInterval(() => {
 
 window.onload = () => {
   const width = window.innerWidth;
+  // body.style.width = `${width}px`;
+  // body.style.width = `${body.clientWidth + bodyWidthAdd}px`;
   fixedNav.style.width = `${width}px`;
 };
 

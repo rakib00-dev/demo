@@ -429,6 +429,10 @@ li {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover i {
+  color: #ecc94b; /* Hover Yellow 500 */
+}
+
 .icon {
   width: 60px;
   height: 60px;
@@ -440,9 +444,8 @@ li {
   border-radius: 50%;
 }
 
-.svg-icon {
-  width: 31px;
-  height: 24px;
+.icon i {
+  font-size: 31px;
   stroke: var(--yellow);
 }
 

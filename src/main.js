@@ -15,21 +15,21 @@ window.onload = () => {
 
 window.addEventListener('resize', () => {
   const width = window.innerWidth;
-  fixedNav.style.width = `${width}px`;
-  // if (width === 1024) {
-  // }
+  if (width <= 1024) {
+    fixedNav.style.width = `${width}px`;
+  }
 });
 
 bar.addEventListener('click', () => {
-  // cross.style.display = 'block';
-  // bar.style.display = 'none';
+  cross.style.display = 'block';
+  bar.style.display = 'none';
   menuUl.classList.toggle('navToggle');
 });
-// cross.addEventListener('click', () => {
-//   cross.style.display = 'none';
-//   bar.style.display = 'block';
-//   menuUl.classList.toggle('navToggle');
-// });
+cross.addEventListener('click', () => {
+  cross.style.display = 'none';
+  bar.style.display = 'block';
+  menuUl.classList.toggle('navToggle');
+});
 
 // experience variable
 const experienceClients = document.getElementById('experience-clients');

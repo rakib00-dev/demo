@@ -125,7 +125,6 @@ li {
   align-items: center;
   padding: 0 25px;
   transition: 0.7s;
-  /* overflow: hidden; */
 }
 
 #fixedNav {
@@ -448,13 +447,14 @@ li {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin: 15px 0;
 }
 
 .card-description {
   color: #6c757d;
+  font-size: 15px;
 }
 
 .learn-more {
@@ -826,7 +826,7 @@ textarea {
     width: 915px;
   }
   #wrapper {
-    width: 768px;
+    width: 1024px;
   }
 
   .hidden-lg {
@@ -925,7 +925,7 @@ textarea {
     width: 640px;
   }
   #wrapper {
-    width: 640px;
+    width: 88%;
   }
   .stat-title {
     font-size: 3rem; /* Larger title for medium devices */
@@ -944,7 +944,7 @@ textarea {
     width: 475px;
   }
   #wrapper {
-    width: 475px;
+    width: 88%;
   }
   .stat-title {
     font-size: 2.5rem; /* Larger title for small devices */
@@ -957,7 +957,7 @@ textarea {
     width: 100%;
   }
   #wrapper {
-    width: 100%;
+    width: 88%;
   }
   .row {
     display: grid;

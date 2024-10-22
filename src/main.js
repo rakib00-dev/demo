@@ -3,22 +3,22 @@ const bar = document.getElementById('bar');
 const cross = document.getElementById('cross');
 const menuUl = document.getElementById('menuUl');
 
-// setInterval(() => {
-//   const width = window.innerWidth;
-//   fixedNav.style.width = `${width}px`;
-// }, 1000);
+setInterval(() => {
+  const width = window.innerWidth;
+  fixedNav.style.width = `${width}px`;
+}, 1000);
 
-// window.onload = () => {
-//   const width = window.innerWidth;
-//   fixedNav.style.width = `${width}px`;
-// };
+window.onload = () => {
+  const width = window.innerWidth;
+  fixedNav.style.width = `${width}px`;
+};
 
-// window.addEventListener('resize', () => {
-//   const width = window.innerWidth;
-//   if (width <= 1024) {
-//     fixedNav.style.width = `${width}px`;
-//   }
-// });
+window.addEventListener('resize', () => {
+  const width = window.innerWidth;
+  if (width <= 1024) {
+    fixedNav.style.width = `${width}px`;
+  }
+});
 
 bar.addEventListener('click', () => {
   cross.style.display = 'block';

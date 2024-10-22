@@ -15,32 +15,89 @@ window.onload = () => {
 
 window.addEventListener('resize', () => {
   const width = window.innerWidth;
-
-  if (width <= 1024) {
-    menuUl.style.display = 'none';
-    fixedNav.style.width = `${width}px`;
-    menuUl.classList.add('navToggle');
-  } else {
-    menuUl.classList.remove('navToggle');
-    menuUl.style.display = 'flex';
-    fixedNav.style.width = '';
-  }
+  fixedNav.style.width = `${width}px`;
+  // if (width === 1024) {
+  // }
 });
 
 bar.addEventListener('click', () => {
-  cross.style.display = 'block';
-  bar.style.display = 'none';
-  menuUl.style.display = 'grid';
-  menuUl.classList.add('navToggle');
-  cross.addEventListener('click', () => {
-    cross.style.display = 'none';
-    bar.style.display = 'block';
-    menuUl.classList.remove('navToggle');
-    menuUl.style.display = 'none';
-  });
+  // cross.style.display = 'block';
+  // bar.style.display = 'none';
+  menuUl.classList.toggle('navToggle');
 });
+// cross.addEventListener('click', () => {
+//   cross.style.display = 'none';
+//   bar.style.display = 'block';
+//   menuUl.classList.toggle('navToggle');
+// });
 
-// navBar onScroll
+// experience variable
+const experienceClients = document.getElementById('experience-clients');
+const experienceRepeatedClients = document.getElementById(
+  'experience-repeated-clients'
+);
+const experienceProject = document.getElementById('experience-project');
+const experienceInYear = document.getElementById('experienceInYear');
+let since = 2018;
+let latestDate = new Date().getFullYear();
+let currentExperience = latestDate - since;
+let exClintCounter = 0;
+let exRepClintCounter = 0;
+let exProjCounter = 0;
+let exYrsCounter = 0;
+
+let countingStarted = false;
+
+const countFunction = () => {
+  if (countingStarted) {
+    return; // Prevent multiple calls
+  }
+  countingStarted = true;
+
+  // exClintCounter
+  setInterval(() => {
+    if (exClintCounter === 37) {
+      clearInterval();
+      return;
+    } else {
+      exClintCounter += 1;
+      experienceClients.innerHTML = exClintCounter;
+    }
+  }, 150);
+
+  // exRepClintCounter
+  setInterval(() => {
+    if (exRepClintCounter === 19) {
+      clearInterval();
+      return;
+    } else {
+      exRepClintCounter += 1;
+      experienceRepeatedClients.innerHTML = exRepClintCounter;
+    }
+  }, 350);
+
+  // exProjCounter
+  setInterval(() => {
+    if (exProjCounter === 50) {
+      clearInterval();
+      return;
+    } else {
+      exProjCounter += 1;
+      experienceProject.innerHTML = exProjCounter;
+    }
+  }, 100);
+
+  // exYrsCounter
+  setInterval(() => {
+    if (exYrsCounter === currentExperience) {
+      clearInterval();
+      return;
+    } else {
+      exYrsCounter += 1;
+      experienceInYear.innerHTML = exYrsCounter;
+    }
+  }, 800);
+};
 
 window.addEventListener('scroll', function () {
   const scrollCount = window.scrollY;
@@ -56,5 +113,10 @@ window.addEventListener('scroll', function () {
     fixedNav.style.top = '-5px';
     fixedNav.style.boxShadow = null;
   }
-  console.log(scrollCount);
+
+  if (window.scrollY >= 238) {
+    countFunction();
+  }
+
+  // experience
 });

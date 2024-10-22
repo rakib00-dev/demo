@@ -826,12 +826,6 @@ textarea {
 
 /* lg */
 @media (max-width: 1024px) {
-  section {
-    width: 112%;
-  }
-  body {
-    width: 118%;
-  }
   .wrapper {
     width: 915px;
   }

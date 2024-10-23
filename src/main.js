@@ -125,3 +125,17 @@ window.addEventListener('scroll', function () {
 
   // experience
 });
+
+// form functionality
+const submitBtn = document.getElementById('submit-button');
+const inputName = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+submitBtn.addEventListener('click', () => {
+  setTimeout(() => {
+    inputName.value = '';
+    email.value = '';
+    message.value = '';
+  }, 1000);
+});

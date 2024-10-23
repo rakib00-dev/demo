@@ -308,7 +308,22 @@
             gentrify.
           </p>
         </div>
-        <div class="form-container">
+        <form
+          class="form-container"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="b640702b-7049-4dc2-9e1d-b6be69069c49"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -317,6 +332,7 @@
                 id="name"
                 name="name"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div class="form-group">
@@ -326,6 +342,7 @@
                 id="email"
                 name="email"
                 placeholder="Enter your email"
+                required
               />
             </div>
           </div>
@@ -335,6 +352,7 @@
               id="message"
               name="message"
               placeholder="Enter your message"
+              required
             ></textarea>
           </div>
           <button class="submit-button">Submit</button>
@@ -346,23 +364,14 @@
             <p>Lives in Turkey</p>
             <div class="social-icons">
               <a target="_blank" href="#" class="icon"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a target="_blank" href="#" class="icon"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a target="_blank" href="#" class="icon"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a target="_blank" href="#" class="icon"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="fa-solid fa-at"></i
               ></a>
               <a target="_blank" href="https://t.me/Farinha43" class="icon"
                 ><i class="fa-brands fa-telegram"></i
               ></a>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <script src="src/main.js"></script>
